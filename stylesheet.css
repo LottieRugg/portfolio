@@ -77,6 +77,8 @@ header{
     /* margin-right: 200px; */
 }
 
+/* header button styling */
+
 button{
     padding: 30px;
     display: block;
@@ -86,9 +88,44 @@ button{
     font-size: 20px;
     border-radius: 45px;
     border-style: none;
-    background-color: #d1e0ef;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 2;
+    
 }
 
 .jump_to_contact{
     text-decoration: none;
+}
+
+/* My work section styling */
+
+.my_work{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-top: 100px;
+    background-color: #d1e0ef;
+   
+    
+}
+.project_text{
+    padding: 40px;
+    margin-left: 50px;
+}
+.project_image img{
+   height: 400px;
+   width:auto;
+   padding: 30px;
+   display: block;
+    margin:auto;
+   
+}
+
+.my_work_two{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding-top: 100px;
+    background-color: #d1e0ef;
+   
+    
 }
