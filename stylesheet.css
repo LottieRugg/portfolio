@@ -1,0 +1,39 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+/* Nav bar styling */
+
+nav{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    padding: 20px 0px 20px 0px;
+    background-color: #d1e0ef;
+    text-transform: uppercase;
+}
+   
+
+.topnav{
+    padding: 3px;
+    /* text-transform: capitalize; */
+}
+
+nav a{
+    text-decoration: none;
+    /* padding: 0 10px 0 10px */
+    margin: 20px;
+    color: #000000;
+}
+    
+
+nav i{
+    padding: 0  5px 0 0;
+}
