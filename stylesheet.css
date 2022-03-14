@@ -42,24 +42,26 @@ nav i{
 header{
     background-image: url("Images/Background.jpg");
     width: 100%;
-    height: 600px;
+    height: 750px;
 }
 
 .intro{
     display: grid;
     grid-template-columns: 60% 40%;
+    padding-top: 100px;
     
 }
 
 .intro_item{
-    margin: 100px;
+    margin: 30px;
     align-self: center;
    
 }
 
 .intro_item.intro_text{
     background-color:#FFFFFF ;
-    padding: 40px;
+    padding: 100px 40px;
+
     margin-left: 150px;
   
 }
@@ -71,7 +73,22 @@ header{
     height: 300px;
     width: 300px;
     display: block;
-    margin-right: 300px;
-  
-    
+    margin:auto;
+    /* margin-right: 200px; */
+}
+
+button{
+    padding: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30px;
+    font-size: 20px;
+    border-radius: 45px;
+    border-style: none;
+    background-color: #d1e0ef;
+}
+
+.jump_to_contact{
+    text-decoration: none;
 }
