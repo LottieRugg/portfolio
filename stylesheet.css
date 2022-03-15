@@ -117,7 +117,8 @@ button{
    width:auto;
    padding: 30px;
    display: block;
-    margin:auto;
+   margin-left:auto;
+   margin-right:auto;
    
 }
 
@@ -129,3 +130,59 @@ button{
    
     
 }
+
+/* My experience section styling */
+
+.my_experience{
+    background-color: #fae3e5;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.experience_text{
+    padding: 150px;
+}
+
+/* Contact form styling */
+
+.contact_form_section{
+    background-image: url("Images/Background.jpg");
+    width: 100%;
+    height: 850px;
+    padding-top:100px;
+    
+}
+.contact_form{
+    background-color: #FFFFFF;
+    padding: 60px 40px;
+    padding: 100px;
+    margin: auto;
+    width:50%;
+    
+}
+
+input{
+    display: block;
+    padding:10px;
+    margin: 10px;
+    background-color: #d1e0ef;
+    border:none;
+    font-family:'Poppins', sans-serif;
+}
+
+textarea{
+    margin:0 10px;
+    padding: 1px 2px;
+    background-color: #d1e0ef;
+    border:none;
+    font-family:'Poppins', sans-serif;
+    padding: 10px;
+    color:#000000
+}
+
+textarea::placeholder{
+    color:#6a6a6a;
+}
+
+/* Footer bar styling */
