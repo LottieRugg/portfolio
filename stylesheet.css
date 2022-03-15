@@ -23,7 +23,6 @@ nav{
 
 .topnav{
     padding: 3px;
-    /* text-transform: capitalize; */
 }
 
 nav a{
@@ -48,22 +47,18 @@ header{
 .intro{
     display: grid;
     grid-template-columns: 60% 40%;
-    padding-top: 100px;
-    
+    padding-top: 100px;    
 }
 
 .intro_item{
     margin: 30px;
     align-self: center;
-   
 }
 
 .intro_item.intro_text{
     background-color:#FFFFFF ;
     padding: 100px 40px;
-
     margin-left: 150px;
-  
 }
 
 
@@ -74,7 +69,6 @@ header{
     width: 300px;
     display: block;
     margin:auto;
-    /* margin-right: 200px; */
 }
 
 /* header button styling */
@@ -91,7 +85,6 @@ button{
     background-color: #FFFFFF;
     position: relative;
     z-index: 2;
-    
 }
 
 .jump_to_contact{
@@ -104,9 +97,7 @@ button{
     display: grid;
     grid-template-columns: 40% 60%;
     padding-top: 100px;
-    background-color: #d1e0ef;
-   
-    
+    background-color: #d1e0ef; 
 }
 .project_text{
     padding: 40px;
@@ -119,7 +110,6 @@ button{
    display: block;
    margin-left:auto;
    margin-right:auto;
-   
 }
 
 .my_work_two{
@@ -127,8 +117,6 @@ button{
     grid-template-columns: 60% 40%;
     padding-top: 100px;
     background-color: #d1e0ef;
-   
-    
 }
 
 /* My experience section styling */
@@ -159,7 +147,6 @@ button{
     padding: 100px;
     margin: auto;
     width:50%;
-    
 }
 
 input{
@@ -186,3 +173,118 @@ textarea::placeholder{
 }
 
 /* Footer bar styling */
+footer{
+    width: 100%;
+    height:70px;
+    background-color: #fae3e5;
+    color:#214794;
+    padding: 20px;
+}
+footer a{
+    color:#214794;
+    padding:5px;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #e2431b;
+}
+
+.email_link{
+    float: right;
+}
+
+@media only screen and (max-width:1266px){
+    .my_experience{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    /* a .cv_icon{
+        margin:auto;
+    } */
+    .my_experience{
+        background-color: #fae3e5;
+        background-size: cover;
+        background-position: center;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .experience_text{
+        padding: 10px;
+    }
+    .my_experience a{
+        margin:auto;
+    }
+}
+
+@media only screen and (max-width: 998px){
+    
+    nav{
+        display:grid;
+        grid-template-columns: 100%;
+    }
+    /* nav a{
+        width:100%;
+    } */
+  
+
+    .intro{
+        display: grid;
+        grid-template-columns: 100%;
+        /* margin: 20px; */
+        margin:0;
+        padding:0;
+        background-color: #fae3e5;
+    }
+    .intro_item.intro_text{
+        background-color:#fae3e5;
+        padding: 10px ;
+        width: 100%;
+        margin: 0px;
+    }
+
+    button{  
+        padding: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:15px;
+        font-size: 16px;
+        border-radius: 45px;
+        border-style: none;
+        background-color: #FFFFFF;
+        position: relative;
+        z-index: 2;
+    }
+    img{
+        max-width: 100%;
+        height:auto;
+    }
+    .project_image img{
+        height:auto;
+    }
+    .project_text{
+        margin:0;
+    }
+    .my_work{
+        display: grid;
+        grid-template-columns: 100%;
+        margin:0;
+        padding:10px;
+    }
+    .my_work_two{
+        display: grid;
+        grid-template-columns: 100%;
+        margin:auto;
+        padding:10px;
+    }
+    
+    .contact_form{
+        background-color:#FFFFFF;
+        padding:0;
+        padding: 10px;
+        margin: auto;
+        width:100%
+    }
+
+}
