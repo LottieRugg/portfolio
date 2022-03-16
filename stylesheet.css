@@ -32,11 +32,8 @@ nav a{
 nav a:hover{
     background-color:#fae3e5;
     border-radius: 25px;
-    padding:12px;
+    padding: 12px;
     color:#e2431b;
-}
-nav i{
-    padding-right: 5px;
 }
 /* Header styling  */
 header{
@@ -159,24 +156,19 @@ input{
     margin: 10px;
     background-color: #d1e0ef;
     border: none;
-    font-family:'Poppins', sans-serif;
-    width: 60%;
+    width: 90%;
 }
 textarea{
     margin: 0 10px;
     padding: 1px 2px;
     background-color: #d1e0ef;
     border: none;
-    font-family:'Poppins', sans-serif;
     padding: 10px;
     color: #000000;
-    width:60%;
+    width: 90%;
 }
 textarea::placeholder{
     color: #6a6a6a;
-}
-.submit_button a{
-    text-decoration: none;
 }
 /* Footer bar styling */
 footer{
@@ -205,13 +197,10 @@ a{
 }
 @media only screen and (max-width:1266px){
     .my_experience{
-        display: grid;
         grid-template-columns: 100%;
-        background-color: #fae3e5;
         background-size: cover;
         background-position: center;
         margin: 0px;
-        display: grid;
     }
     .experience_text{
         padding: 10px;
@@ -219,7 +208,6 @@ a{
 }
 @media only screen and (max-width: 998px){
     .intro{
-        
         grid-template-columns: 100%;
         margin:0;
         padding:0;
@@ -229,7 +217,7 @@ a{
         background-color: #fae3e5;
         padding: 10px ;
         width: 100%;
-        margin: 0px;
+        margin: 0;
     }
     header{
         background-image: none;
@@ -238,15 +226,8 @@ a{
 
     button{  
         padding: 15px;
-        display: block;
         margin-left: auto;
-        margin-right: auto;
-        font-size: 16px;
-        border-radius: 45px;
-        border-style: none;
-        background-color: #FFFFFF;
-        position: relative;
-        z-index: 2;
+        margin-right: auto;  
     }
     .header_button{
         display:none;
@@ -254,9 +235,17 @@ a{
     img{
         max-width: 100%;
         height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        
     }
     .project_image img{
         height: auto;
+        width:auto;
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+    
     }
     .project_text{
         margin: 0;
@@ -272,13 +261,9 @@ a{
         padding: 10px;
     }
     .contact_form{
-        background-color:#FFFFFF;
-        padding: 0;
         padding: 10px;
-        /* margin: auto; */
         width: 80%;
     }
-
 }
 @media only screen and (max-width: 617px){
     nav a{
@@ -286,19 +271,16 @@ a{
 		grid-template-columns: 100%;
 	}
 }
-
 @media only screen and (max-width:505px){
     .cv_image{
         width:80%;
     }
 }
-
 @media only screen and (max-width:364px){
     .email_link{
         float: none;
         padding-top: 2px;
     }
-   
     footer{
         padding:50px; 
         font-size:10px;       
