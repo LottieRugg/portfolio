@@ -21,7 +21,6 @@ nav{
     background-color: #d1e0ef;
     text-transform: uppercase;
     color:#214794;
-
 }
 .topnav{
     padding: 12px;
@@ -29,8 +28,6 @@ nav{
 nav a{
     text-decoration: none;
         margin: 10px;
-        /* padding:20px; */
-    /* color: #214794; */
 }
 nav a:hover{
     background-color:#fae3e5;
@@ -82,7 +79,6 @@ button{
     padding: 30px;
     color:#214794;
 }
-
 .jump_to_contact{
     text-decoration: none;
 }
@@ -120,7 +116,6 @@ button{
 a button:hover{
     background-color: #fae3e5;
 }
-
 a:hover button {
     color:#e2431b;
 }
@@ -133,8 +128,6 @@ a:hover button {
 }
 .cv_image{
     max-width: 500px;
-    /* width: 100%; */
-    
 }
 .cv_icon{
     place-self: center;
@@ -223,9 +216,6 @@ a{
     .experience_text{
         padding: 10px;
     }
-    /* .my_experience a{
-        margin: auto;
-    } */
 }
 @media only screen and (max-width: 998px){
     .intro{
@@ -300,6 +290,17 @@ a{
 @media only screen and (max-width:505px){
     .cv_image{
         width:80%;
-        /* place-self:center; */
+    }
+}
+
+@media only screen and (max-width:364px){
+    .email_link{
+        float: none;
+        padding-top: 2px;
+    }
+   
+    footer{
+        padding:50px; 
+        font-size:10px;       
     }
 }
