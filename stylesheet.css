@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
 }
 html{
     scroll-behavior: smooth;
@@ -35,6 +36,7 @@ nav a:hover{
     background-color:#fae3e5;
     border-radius: 25px;
     padding:12px;
+    color:#e2431b;
 }
 nav i{
     padding-right: 5px;
@@ -78,6 +80,7 @@ button{
     position: relative;
     z-index: 2;
     padding: 30px;
+    color:#214794;
 }
 
 .jump_to_contact{
@@ -101,22 +104,35 @@ button{
    margin-left: auto;
    margin-right: auto;
 }
-
 .my_work_two{
     display: grid;
     grid-template-columns: 60% 40%;
     padding-top: 100px;
     background-color: #d1e0ef;
 }
+.project_button{
+    padding: 20px;
+    margin-left: 0px;
+    margin-right: 10px;
+    font-size: 16px;
+    display: inline;
+}
+a button:hover{
+    background-color: #fae3e5;
+}
+
+a:hover button {
+    color:#e2431b;
+}
 /* My experience section styling */
 .my_experience{
     background-color: #fae3e5;
     margin: 0px;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 40% 30% 20%;
 }
 .experience_text{
-    padding: 150px;
+    padding: 100px;
 }
 /* Contact form styling */
 .contact_form_section{
@@ -180,7 +196,9 @@ footer a:hover{
 
 a{
     color:#214794;
+    text-decoration: none;
 }
+
 @media only screen and (max-width:1266px){
     .my_experience{
         display: grid;
@@ -198,13 +216,6 @@ a{
         margin: auto;
     }
 }
-
-@media only screen and (max-width: 617px){
-    nav a{
-        display: grid;
-		grid-template-columns: 100%;
-	}
-}
 @media only screen and (max-width: 998px){
     .intro{
         
@@ -219,7 +230,10 @@ a{
         width: 100%;
         margin: 0px;
     }
-
+    header{
+        background-image: none;
+        height:auto;
+    }
     button{  
         padding: 15px;
         display: block;
@@ -232,6 +246,9 @@ a{
         background-color: #FFFFFF;
         position: relative;
         z-index: 2;
+    }
+    .header_button{
+        display:none;
     }
     img{
         max-width: 100%;
@@ -261,4 +278,10 @@ a{
         width: 100%
     }
 
+}
+@media only screen and (max-width: 617px){
+    nav a{
+        display: grid;
+		grid-template-columns: 100%;
+	}
 }

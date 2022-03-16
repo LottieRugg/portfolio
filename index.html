@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="normalize.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/40c7107b4d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,13 +18,13 @@
             Lottie Rugg-Easey
         </div>
         <div>
-            <a href= "#" class= "topnav" >
+            <a href= "#my_work" class= "topnav" >
                 My work
             </a>
-            <a href= "#" class= "topnav" >
-                About Me
+            <a href= "#my_skills" class= "topnav" >
+                My skills
             </a>
-            <a href= "#" class= "topnav" >
+            <a href= "#contact_form" class= "topnav" >
                 Get in touch
             </a>
         </div>
@@ -43,14 +44,15 @@
                 <img src= "Images/IMG_3335.jpg" class="profile" alt="Profile picture of Lottie Rugg">
             </div>
          </div>    
-            <button> 
-                <a href="#contact_form" class="jump_to_contact">
-                Let's work together 
-                <i class="fa-solid fa-arrow-down-long"></i>
-                </a>
-            </button>
+            <a href="#contact_form" class="jump_to_contact">
+                <button class="header_button"> 
+                    Let's work together 
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </button>
+            </a>    
+            
 </header>
-<div class="my_work">
+<div class="my_work" id="my_work">
     <div class ="project_text">
         <h2>
         My website
@@ -58,6 +60,18 @@
         <p> 
         Mumblecore flexitarian ethical, blue bottle hell of migas put a bird on it. Synth pitchfork air plant, tote bag bespoke meggings bushwick street art raw denim readymade hoodie palo santo enamel pin mumblecore freegan. Schlitz jianbing gluten-free tousled, etsy fam typewriter PBR&B truffaut hot chicken. 
         </p>
+        <a href="#">
+            <button class="project_button">  
+                View live project
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </a>
+        <a href="#">
+            <button class="project_button">  
+            View on GitHub
+            <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </a> 
     </div>
     <div class ="project_image">
         <img src="Images/placeholder_1.png" alt="Screenshots of XYZ website">
@@ -74,6 +88,18 @@
         <p> 
         Mumblecore flexitarian ethical, blue bottle hell of migas put a bird on it. Synth pitchfork air plant, tote bag bespoke meggings bushwick street art raw denim readymade hoodie palo santo enamel pin mumblecore freegan. Schlitz jianbing gluten-free tousled, etsy fam typewriter PBR&B truffaut hot chicken. 
         </p>
+        <a href="#">
+            <button class="project_button">  
+                View live project
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </a>
+        <a href="#">
+            <button class="project_button">  
+            View on GitHub
+            <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </a>    
     </div>
 </div>
 <div class="my_work">
@@ -84,16 +110,22 @@
         <p> 
             Mumblecore flexitarian ethical, blue bottle hell of migas put a bird on it. Synth pitchfork air plant, tote bag bespoke meggings bushwick street art raw denim readymade hoodie palo santo enamel pin mumblecore freegan. Schlitz jianbing gluten-free tousled, etsy fam typewriter PBR&B truffaut hot chicken. 
         </p>
+        <a href="#">
+            <button class="project_button">  
+            View on GitHub
+            <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </a> 
     </div>
     <div class ="project_image">
         <img src="Images/placeholder_1.png" alt="Screenshots of XYZ website">
     </div>
 </div>
 <!-- EXPERIENCE -->
-<div class="my_experience">
+<div class="my_experience" id="my_skills">
     <div class="experience_text">
      <h2>
-    My training, projects and awards
+    Training & Projects
      </h2>
         <ul>
             <li>
@@ -110,6 +142,25 @@
             </li>
         </ul>
     </div>
+    <div class="experience_text">
+        <h2>
+       Skills & Languages
+        </h2>
+           <ul>
+               <li>
+               HTML
+               </li>
+               <li>
+               CSS
+               </li>
+               <li>
+               Javascript
+               </li>
+               <li>
+               PHP
+               </li>
+           </ul>
+       </div>
     <a href="Images/Lottie_Rugg_CV.pdf" download="Lottie Rugg CV" target="_blank" class="cv_icon"> 
     <img src="Images/DOWNLOAD my cv.gif" alt="CV download button">
     </a>      
@@ -125,26 +176,26 @@
             <p>
             If you've got a project that needs some support or want to find out more, please get in touch using the form below. 
             </p>
-            <input type="text" id="first_name" name="first_name" placeholder = "First name">
-            <input type="text" id="last_name" name="last_name" placeholder = "Last name">
-            <input type="email" id="email" name="email" placeholder = "Email address">
-            <textarea id="message" name="message" placeholder="Your message"></textarea>
-            <button class="submit_button">
-                <a href="#">
-                submit
+            <input type="text" id="first_name" name="first_name" placeholder = "First name" aria-label="first name">
+            <input type="text" id="last_name" name="last_name" placeholder = "Last name" aria-label="last name">
+            <input type="email" id="email" name="email" placeholder = "Email address" aria-label="email address">
+            <textarea id="message" name="message" placeholder="Your message" aria-label="Your message"></textarea>
+            <a href="#">  
+                <button class="header_footer_button">
+                    Submit
                 <i class="fa-solid fa-arrow-right"></i>
-                </a>
-            </button>
+                </button>
+            </a>    
         </form>
     </a>
     </div>
 </div>
 <footer>
     <div class="footer_icons">
-        <a href="https://www.linkedin.com/in/lottierugg/" target="_blank">
+        <a href="https://www.linkedin.com/in/lottierugg/" target="_blank" aria-label="LinkedIn link">
             <i class="fa-brands fa-linkedin fa-2xl"></i>
         </a>
-        <a href="https://github.com/LottieRugg" target="_blank">   
+        <a href="https://github.com/LottieRugg" target="_blank" aria-label="GitHib link">   
             <i class="fa-brands fa-github fa-2xl"></i>
         </a>     
         <a href="mailto:lottie.ruggeasey@gmail.com" class="email_link" target="_blank">
