@@ -6,6 +6,9 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 /* Nav bar styling */
 
 nav{
@@ -13,18 +16,25 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 20px 0px;
+    padding: 20px;
     background-color: #d1e0ef;
     text-transform: uppercase;
+    color:#214794;
+
 }
 .topnav{
-    padding: 3px;
+    padding: 12px;
 }
 nav a{
     text-decoration: none;
-    margin: 20px;
-    color: #000000;
+        margin: 10px;
+        /* padding:20px; */
+    /* color: #214794; */
+}
+nav a:hover{
+    background-color:#fae3e5;
+    border-radius: 25px;
+    padding:12px;
 }
 nav i{
     padding-right: 5px;
@@ -32,7 +42,6 @@ nav i{
 /* Header styling  */
 header{
     background-image: url("Images/Background.jpg");
-    width: 100%;
     height: 750px;
 }
 .intro{
@@ -62,7 +71,6 @@ button{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     font-size: 20px;
     border-radius: 45px;
     border-style: none;
@@ -71,9 +79,7 @@ button{
     z-index: 2;
     padding: 30px;
 }
-button a{ 
-    color: #214794;
-}
+
 .jump_to_contact{
     text-decoration: none;
 }
@@ -90,7 +96,6 @@ button a{
 }
 .project_image img{
    height: 400px;
-   width: auto;
    padding: 30px;
    display: block;
    margin-left: auto;
@@ -116,16 +121,20 @@ button a{
 /* Contact form styling */
 .contact_form_section{
     background-image: url("Images/Background.jpg");
-    width: 100%;
     height: 850px;
     padding-top: 100px;
 }
 .contact_form{
     background-color: #FFFFFF;
-    padding: 60px 40px;
     padding: 100px;
     margin: auto;
     width: 50%;
+}
+.contact_form p{
+    margin-left: 10px;
+}
+.contact_form h2{
+    margin: 10px;
 }
 input{
     display: block;
@@ -154,14 +163,11 @@ textarea::placeholder{
 }
 /* Footer bar styling */
 footer{
-    width: 100%;
     height: 70px;
     background-color: #fae3e5;
-    color: #214794;
     padding: 20px;
 }
 footer a{
-    color: #214794;
     padding: 5px;
     text-decoration: none;
 }
@@ -171,18 +177,19 @@ footer a:hover{
 .email_link{
     float: right;
 }
+
+a{
+    color:#214794;
+}
 @media only screen and (max-width:1266px){
     .my_experience{
         display: grid;
         grid-template-columns: 100%;
-    }
-    .my_experience{
         background-color: #fae3e5;
         background-size: cover;
         background-position: center;
         margin: 0px;
         display: grid;
-        grid-template-columns: 100%;
     }
     .experience_text{
         padding: 10px;
@@ -191,15 +198,17 @@ footer a:hover{
         margin: auto;
     }
 }
+
+@media only screen and (max-width: 617px){
+    nav a{
+        display: grid;
+		grid-template-columns: 100%;
+	}
+}
 @media only screen and (max-width: 998px){
-    nav{
-        display: grid;
-        grid-template-columns: 100%;
-    }
     .intro{
-        display: grid;
+        
         grid-template-columns: 100%;
-      
         margin:0;
         padding:0;
         background-color: #fae3e5;
@@ -235,15 +244,13 @@ footer a:hover{
         margin: 0;
     }
     .my_work{
-        display: grid;
         grid-template-columns: 100%;
         margin: 0;
         padding: 10px;
     }
     .my_work_two{
-        display: grid;
         grid-template-columns: 100%;
-        margin: auto;
+        margin: 0;
         padding: 10px;
     }
     .contact_form{
