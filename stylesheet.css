@@ -5,15 +5,26 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
+    color:#214794;
 }
 html{
     scroll-behavior: smooth;
+}
+/* button base styles */
+.base_button{
+    border-radius:45px;
+    display:inline-block;
+    margin: 10px 10px 0 0;
+    padding: 18px;
+    background-color: #FFFFFF;
+}
+.base_button:hover{
+    background-color: #fae3e5;
 }
 /* Nav bar styling */
 
 nav{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -68,22 +79,19 @@ p{
 }
 /* header button styling */
 .header_button{
-    display: inline-block;
     font-size: 20px;
-    border-radius: 45px;
-    border-style: none;
-    background-color: #FFFFFF;
-    padding: 30px;
-}
-.jump_to_contact{
-    text-decoration: none;
+    padding: 26px;
 }
 /* My work section styling */
 .my_work{
     display: grid;
     grid-template-columns: 40% 60%;
     padding-top: 100px;
-    background-color: #d1e0ef; 
+    background-color: #d1e0ef;
+    color:#000000; 
+}
+.my_work_reverse{
+    grid-template-columns: 60% 40%;
 }
 .project_text{
     padding: 40px;
@@ -96,30 +104,13 @@ p{
    margin-left: auto;
    margin-right: auto;
 }
-.my_work_two{
-    display: grid;
-    grid-template-columns: 60% 40%;
-    padding-top: 100px;
-    background-color: #d1e0ef;
-}
-.external_button:hover{
-    background-color: #fae3e5;
-}
-
-.external_button{
-    padding:18px;
-    background-color: #FFFFFF;
-    border-radius: 45px;
-    margin: 10px 10px 0 0;
-    display:inline-block;
-
-}
 /* My experience section styling */
 .my_experience{
     background-color: #fae3e5;
     margin: 0px;
     display: grid;
     grid-template-columns: 40% 30% 20%;
+    color:#000000;
 }
 .cv_image{
     max-width: 500px;
@@ -158,7 +149,6 @@ input{
 }
 textarea{
     margin: 0 10px;
-    padding: 1px 2px;
     background-color: #d1e0ef;
     border: none;
     padding: 10px;
@@ -170,9 +160,8 @@ textarea::placeholder{
 }
 /* Footer bar styling */
 footer{
-    height: 70px;
     background-color: #fae3e5;
-    padding: 20px;
+    padding: 30px;
 }
 footer a{
     padding: 5px;
@@ -221,7 +210,6 @@ a{
         height: auto;
         margin-left: auto;
         margin-right: auto;
-        
     }
     .project_image img{
         height: auto;
@@ -229,7 +217,6 @@ a{
         display:block;
         margin-right:auto;
         margin-left:auto;
-    
     }
     .project_text{
         margin: 0;
