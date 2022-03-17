@@ -22,7 +22,6 @@ html{
     background-color: #fae3e5;
 }
 /* Nav bar styling */
-
 nav{
     display: flex;
     justify-content: space-between;
@@ -239,10 +238,10 @@ a{
 @media only screen and (max-width: 617px){
     nav a{
         display: grid;
-		grid-template-columns: 100%;
+        grid-template-columns: 100%;
 	}
     .experience_text{
-        padding: 10px
+        padding: 10px;
     }
 }
 @media only screen and (max-width:505px){
