@@ -19,25 +19,26 @@ nav{
     padding: 20px;
     background-color: #d1e0ef;
     text-transform: uppercase;
-    color:#214794;
 }
 .topnav{
     padding: 12px;
 }
 nav a{
-    text-decoration: none;
-        margin: 10px;
+    margin: 10px;
 }
 nav a:hover{
     background-color:#fae3e5;
     border-radius: 25px;
     padding: 12px;
-    color:#e2431b;
+}
+a:hover{
+    color: #e2431b;
 }
 /* Header styling  */
 header{
     background-image: url("Images/Background.jpg");
     height: 750px;
+    text-align: center;
 }
 .intro{
     display: grid;
@@ -52,6 +53,7 @@ header{
     background-color: #FFFFFF ;
     padding: 100px 40px;
     margin-left: 150px;
+    text-align: left;
 }
 .profile{
     object-fit: cover;
@@ -61,19 +63,17 @@ header{
     display: block;
     margin: auto;
 }
+p{
+    padding-bottom:10px;
+}
 /* header button styling */
-button{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.header_button{
+    display: inline-block;
     font-size: 20px;
     border-radius: 45px;
     border-style: none;
     background-color: #FFFFFF;
-    position: relative;
-    z-index: 2;
     padding: 30px;
-    color:#214794;
 }
 .jump_to_contact{
     text-decoration: none;
@@ -102,18 +102,17 @@ button{
     padding-top: 100px;
     background-color: #d1e0ef;
 }
-.project_button{
-    padding: 20px;
-    margin-left: 0px;
-    margin-right: 10px;
-    font-size: 16px;
-    display: inline;
-}
-a button:hover{
+.external_button:hover{
     background-color: #fae3e5;
 }
-a:hover button {
-    color:#e2431b;
+
+.external_button{
+    padding:18px;
+    background-color: #FFFFFF;
+    border-radius: 45px;
+    margin: 10px 10px 0 0;
+    display:inline-block;
+
 }
 /* My experience section styling */
 .my_experience{
@@ -179,20 +178,12 @@ footer a{
     padding: 5px;
     text-decoration: none;
 }
-footer a:hover{
-    color: #e2431b;
-}
 .email_link{
     float: right;
 }
 a{
     color:#214794;
     text-decoration: none;
-}
-@media only screen and (max-width:1305px){
-    button{
-        margin-top:15px;
-    }
 }
 @media only screen and (max-width:1266px){
     .my_experience{
@@ -221,11 +212,6 @@ a{
     header{
         background-image: none;
         height:auto;
-    }
-    button{  
-        padding: 15px;
-        margin-left: auto;
-        margin-right: auto;  
     }
     .header_button{
         display:none;
