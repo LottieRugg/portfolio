@@ -1,0 +1,267 @@
+$brand_navy: #214794;
+$brand_pink: #fae3e5;
+$brand_red: #e2431b;
+$brand_baby_blue: #d1e0ef;
+@mixin background_image(){
+    background-image: url("Images/Background.jpg");
+}
+@mixin grid_display(){
+    display:grid;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color:$brand_navy;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* button base styles */
+.base_button{
+    border-radius:45px;
+    display:inline-block;
+    margin: 10px 10px 0 0;
+    padding: 18px;
+    background-color: #FFFFFF;
+}
+.base_button:hover{
+    background-color: $brand_pink;
+}
+/* Nav bar styling */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: $brand_baby_blue;
+    text-transform: uppercase;
+}
+.topnav{
+    padding: 12px;
+}
+nav a{
+    margin: 10px;
+}
+nav a:hover{
+    background-color:$brand_pink;
+    border-radius: 25px;
+    padding: 12px;
+}
+a:hover{
+    background-color: $brand_pink;
+
+}
+/* Header styling  */
+header{
+    @include background_image;
+    height: 750px;
+    text-align: center;
+}
+.intro{
+    @include grid_display;
+    grid-template-columns: 60% 40%;
+    padding-top: 100px;    
+}
+.intro_item{
+    margin: 30px;
+    align-self: center;
+}
+.intro_item.intro_text{
+    background-color: #FFFFFF ;
+    padding: 100px 40px;
+    margin-left: 150px;
+    text-align: left;
+}
+.profile{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+p{
+    padding-bottom:10px;
+}
+/* header button styling */
+.header_button{
+    font-size: 20px;
+    padding: 26px;
+}
+/* My work section styling */
+.my_work{
+    @include grid_display;
+    grid-template-columns: 40% 60%;
+    padding-top: 100px;
+    background-color: $brand_baby_blue;
+}
+.my_work_reverse{
+    grid-template-columns: 60% 40%;
+}
+.project_text{
+    padding: 40px;
+    margin-left: 50px;
+}
+.project_image img{
+   height: 400px;
+   padding: 30px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+h2{
+    text-transform: uppercase;
+}
+/* My experience section styling */
+.my_experience{
+    background-color: $brand_pink;
+    margin: 0px;
+}
+ul {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+h4{
+    margin-block-end: 0px;
+}
+.experience_text{
+    padding: 100px;
+}
+/* Contact form styling */
+.contact_form_section{
+    @include background_image;
+    height: 850px;
+    padding-top: 100px;
+}
+.contact_form{
+    background-color: #FFFFFF;
+    padding: 100px;
+    margin: auto;
+    width: 50%;
+}
+.contact_form p{
+    margin-left: 10px;
+}
+.contact_form h2{
+    margin: 10px;
+}
+input{
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    background-color: $brand_baby_blue;
+    border: none;
+    width: 90%;
+}
+textarea{
+    margin: 0 10px;
+    background-color: $brand_baby_blue;
+    border: none;
+    padding: 10px;
+    color: #000000;
+    width: 90%;
+}
+textarea::placeholder{
+    color: #6a6a6a;
+}
+/* Footer bar styling */
+footer{
+    background-color: $brand_pink;
+    padding: 30px;
+}
+footer a{
+    padding: 5px;
+    text-decoration: none;
+}
+.email_link{
+    float: right;
+}
+a{
+    color:$brand_navy;
+    text-decoration: none;
+}
+@media only screen and (max-width:1266px){
+    .my_experience{
+        grid-template-columns: 100%;
+        background-size: cover;
+        background-position: center;
+        margin: 0px;
+    }
+}
+@media only screen and (max-width: 998px){
+    .intro{
+        grid-template-columns: 100%;
+        margin:0;
+        padding:0;
+        background-color: $brand_pink;
+    }
+    .intro_item.intro_text{
+        background-color: $brand_pink;
+        padding: 10px ;
+        width: 100%;
+        margin: 0;
+    }
+    header{
+        background-image: none;
+        height:auto;
+    }
+    .header_button{
+        display:none;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .project_image img{
+        height: auto;
+        width:auto;
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+    }
+    .project_text{
+        margin: 0;
+    }
+    .my_work{
+        grid-template-columns: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    .my_work_two{
+        grid-template-columns: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    .contact_form{
+        padding: 10px;
+        width: 80%;
+    }
+    .experience_text{
+        padding: 40px;
+    }
+}
+@media only screen and (max-width: 617px){
+    nav a{
+        @include grid_display;
+        grid-template-columns: 100%;
+	}
+}
+
+@media only screen and (max-width:364px){
+    .email_link{
+        float: none;
+        padding-top: 2px;
+    }
+    footer{
+        padding:50px; 
+        font-size:10px;       
+    }
+}
