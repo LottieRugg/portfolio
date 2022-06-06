@@ -97,16 +97,16 @@ p{
 /* My work section styling */
 .my_work{
     @include grid_display;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
     padding-top: 100px;
     background-color: $brand_baby_blue;
 }
 .my_work_reverse{
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 50% 50%;
 }
 .project_text{
     padding: 40px;
-    margin-left: 50px;
+    margin-left: 10px;
 }
 .project_image img{
    height: 400px;
