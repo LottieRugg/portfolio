@@ -177,6 +177,10 @@ input {
   width: 90%;
 }
 
+input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
 textarea {
   margin: 0 10px;
   background-color: #d1e0ef;
@@ -184,10 +188,12 @@ textarea {
   padding: 10px;
   color: #000000;
   width: 90%;
+  font-family: "Poppins", sans-serif;
 }
 
 textarea::placeholder {
   color: #6a6a6a;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Footer bar styling */
