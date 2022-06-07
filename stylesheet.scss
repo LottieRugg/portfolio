@@ -192,12 +192,26 @@ a{
     color:$brand_navy;
     text-decoration: none;
 }
-@media only screen and (max-width:1266px){
+@media only screen and (max-width:1320px){
     .my_experience{
         grid-template-columns: 100%;
         background-size: cover;
         background-position: center;
         margin: 0px;
+    }
+
+    .my_work{
+        grid-template-columns: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    .my_work_two{
+        grid-template-columns: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    .header_button{
+        display:none;
     }
 }
 @media only screen and (max-width: 998px){
@@ -217,9 +231,6 @@ a{
         background-image: none;
         height:auto;
     }
-    .header_button{
-        display:none;
-    }
     img{
         max-width: 100%;
         height: auto;
@@ -236,16 +247,7 @@ a{
     .project_text{
         margin: 0;
     }
-    .my_work{
-        grid-template-columns: 100%;
-        margin: 0;
-        padding: 10px;
-    }
-    .my_work_two{
-        grid-template-columns: 100%;
-        margin: 0;
-        padding: 10px;
-    }
+
     .contact_form{
         padding: 10px;
         width: 80%;
